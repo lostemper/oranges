@@ -1,0 +1,6 @@
+select m.site_uid  as 帳號 ,o.status as 狀態 ,o.order_time as 時間 ,o.score  as  育駿幣,o.point as  元寶,g.`NAME` as 遊戲 ,o.ORDER_ID as  '廠商兌幣訂單號'  from  
+  orders  as  o  join  members  as  m  on o.MEMBER=m.ID  left  join  games as  g  on   g.id = o.game   where  m.SITE_UID='m200486035@mplusfun';
+
+
+select m.site_uid  as 帳號 ,o.status as 狀態 ,o.order_time as 時間 ,o.score  as  育駿幣,o.point as  元寶,g.`NAME` as 遊戲 ,o.ORDER_ID as  '廠商兌幣訂單號'  from  
+  orders  as  o  join  members  as  m  on o.MEMBER=m.ID  left  join  games as  g  on   g.id = o.game   where  m.SITE_UID='m200583868@mplusfun';
